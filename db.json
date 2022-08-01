@@ -1,0 +1,16 @@
+{
+  "cars": [
+    {
+      "name": "jake",
+      "email": "abc@abc.com",
+      "price": "12000",
+      "id": 1
+    },
+    {
+      "name": "betty",
+      "email": "abc@abc.com",
+      "price": "20000",
+      "id": 2
+    }
+  ]
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import NavBar from "./NavBar";
+import FormView from "./FormView";
+import CarOffersView from "./CarOffersView";
+
+import "./App.css";
 
 function App() {
+  const [page, setPage] = useState("List"); //
+  const currentView = {
+    List: <CarOffersView />,
+    Form: <FormView />, // we are using component formview here.
+    Info: <div>Info View</div>,
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar onChangePage={setPage} />
+      {currentView[page]}
     </div>
   );
 }
