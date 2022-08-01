@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import NavBar from "./NavBar";
 import FormView from "./FormView";
 import CarOffersView from "./CarOffersView";
+import Contact from "./Contact";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
 
@@ -10,7 +12,7 @@ function App() {
   const currentView = {
     List: <CarOffersView />,
     Form: <FormView />, // we are using component formview here.
-    Info: <div>Info View</div>,
+    Info: <Contact />,
   };
   return (
     <div className="App">

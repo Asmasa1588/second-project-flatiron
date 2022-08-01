@@ -1,10 +1,10 @@
 import React from "react";
 
-function CarOffer({ name, email, price }) {
+function CarOffer({ name, brand, price, onClick }) {
   return (
-    <div>
+    <div onClick={onClick}>
       <div>Name: {name}</div>
-      <div>Email: {email}</div>
+      <div>Brand: {brand}</div>
       <div>Price: {price}</div>
     </div>
   );

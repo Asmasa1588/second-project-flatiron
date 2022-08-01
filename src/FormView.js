@@ -5,6 +5,9 @@ function FormView() {
     name: "",
     email: "",
     price: 0,
+    brand: "",
+    year: undefined,
+    model: "",
   });
   function handleChange(event) {
     setFormData({
@@ -51,6 +54,33 @@ function FormView() {
           name="price"
           onChange={handleChange}
           value={formData.price}
+        />
+      </div>
+      <div>
+        <label>Brand</label>
+        <input
+          type="text"
+          name="brand"
+          onChange={handleChange}
+          value={formData.brand}
+        />
+      </div>
+      <div>
+        <label>Year</label>
+        <input
+          type="number"
+          name="year"
+          onChange={handleChange}
+          value={formData.year}
+        />
+      </div>
+      <div>
+        <label>Model</label>
+        <input
+          type="text"
+          name="model"
+          onChange={handleChange}
+          value={formData.model}
         />
       </div>
       <button type="submit">Submit</button>

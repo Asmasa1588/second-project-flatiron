@@ -1,16 +1,13 @@
 {
   "cars": [
     {
-      "name": "jake",
-      "email": "abc@abc.com",
-      "price": "12000",
-      "id": 1
-    },
-    {
-      "name": "betty",
-      "email": "abc@abc.com",
-      "price": "20000",
-      "id": 2
+      "name": "asma sadiq",
+      "email": "AS1588MA@GMAIL.COM",
+      "price": "13000",
+      "brand": "honda",
+      "year": "2015",
+      "model": "civic",
+      "id": 3
     }
   ]
 }
