@@ -4,9 +4,9 @@ function FormView() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    price: 0,
+    price: "",
     brand: "",
-    year: undefined,
+    year: "",
     model: "",
   });
   function handleChange(event) {
@@ -24,6 +24,15 @@ function FormView() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
+    }).then(() => {
+      setFormData({
+        name: "",
+        email: "",
+        price: "",
+        brand: "",
+        year: "",
+        model: "",
+      });
     });
   }
   return (
