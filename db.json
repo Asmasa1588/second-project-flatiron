@@ -2,7 +2,7 @@
   "cars": [
     {
       "name": "asma sadiq",
-      "email": "AS1588MA@GMAIL.COM",
+      "email": "123@123.com",
       "price": "13000",
       "brand": "honda",
       "year": "2015",
@@ -17,7 +17,15 @@
       "year": "2010",
       "model": "camry",
       "id": 4
+    },
+    {
+      "name": "Jupiter",
+      "email": "123@123.com",
+      "price": "12000",
+      "brand": "honda",
+      "year": "2017",
+      "model": "civic",
+      "id": 5
     }
-    
   ]
 }

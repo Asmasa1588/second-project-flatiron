@@ -4,9 +4,6 @@ function Contact() {
   return (
     <div>
       <div>
-        <b>Email:</b> as1588ma@gmail.com
-      </div>
-      <div>
         <b>Github:</b> https://github.com/Asmasa1588
       </div>
       <div>
