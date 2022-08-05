@@ -18,6 +18,8 @@ function App() {
     <div className="App">
       <NavBar onChangePage={setPage} />
       {currentView[page]}
+
+      
     </div>
   );
 }
