@@ -1,12 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function NavBar({onChangePage}) {
+function NavBar({ onChangePage }) {
   return (
     <nav>
-      <button onClick={() => onChangePage("Form")}>Post New Car Offer</button>
-      <button onClick={() => onChangePage("List")}>View Car Offers</button>
-      <button onClick={() => onChangePage("Info")}>Information</button>
+      <Link to="/form" className="me-2">
+        Post New Car Offer
+      </Link>
+
+      <Link to="/" className="me-2">
+        View Car Offers
+      </Link>
+
+      <Link to="/info">Information</Link>
     </nav>
   );
 }
 export default NavBar;
+
+// it returns 3 buttons. all 3 have click handler.(onClick).
