@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function FormView() {
   const [formData, setFormData] = useState({
+    //properties
     name: "",
     email: "",
     price: "",
@@ -10,10 +11,16 @@ function FormView() {
     model: "",
   });
   function handleChange(event) {
+    //function invoked ,every time when a user type a letter in one of the  inputs,it will update the local state
+    //
+    console.log(event.target.name);
     setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
+      // updating the local state(react state of the component)
+      ...formData, //spread operator : is needed in order to Not delete the rest of the state. ex we update the
+      // year , we would like to still have name email price etc saved.
+      [event.target.name]: event.target.value, // left side is the key. right side is the value
     });
+    console.log(formData);
   }
 
   function handleSubmit(event) {

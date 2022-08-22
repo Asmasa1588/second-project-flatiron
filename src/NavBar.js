@@ -1,18 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function NavBar({ onChangePage }) {
+function NavBar() {
   return (
     <nav>
-      <Link to="/form" className="me-2">
+      <NavLink to="/form" className="me-2">
         Post New Car Offer
-      </Link>
+      </NavLink>
 
-      <Link to="/" className="me-2">
+      <NavLink to="/" className="me-2">
         View Car Offers
-      </Link>
+      </NavLink>
 
-      <Link to="/info">Information</Link>
+      <NavLink to="/info">information</NavLink>
     </nav>
   );
 }

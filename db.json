@@ -19,13 +19,15 @@
       "id": 4
     },
     {
-      "name": "Jupiter",
-      "email": "123@123.com",
-      "price": "12000",
-      "brand": "honda",
-      "year": "2017",
-      "model": "civic",
+      "name": "gypsy",
+      "email": "abc@abc.com",
+      "price": "15000",
+      "brand": "mazda",
+      "year": "2018",
+      "model": "5",
       "id": 5
     }
+    
+    
   ]
 }
