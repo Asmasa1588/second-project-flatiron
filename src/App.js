@@ -25,6 +25,3 @@ function App() {
 }
 
 export default App;
-
-// APP is the root of the project. It contains all the components
-//11: represents the state which determine which route is going to be visulaize.

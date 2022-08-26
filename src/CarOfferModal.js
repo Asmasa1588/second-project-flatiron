@@ -2,10 +2,6 @@ import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 function CarOfferModal({ isOpen, onClose, offer }) {
-  //   const [modal, setModal] = useState(false);
-
-  //   const toggle = () => setModal(!modal);
-
   return (
     <div>
       <Modal isOpen={isOpen}>
